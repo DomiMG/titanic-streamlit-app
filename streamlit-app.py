@@ -11,7 +11,7 @@ import joblib
 from datetime import date
 import os
 from flask import Flask, redirect, url_for, session
-from authlib.integrations.flask_client import OAuth3
+from authlib.integrations.flask_client import OAuth
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # Use a secure random key in production
